@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>공룡 테스트 - MBTI</title>
+        <meta name="description" content="귀여운 공룡으로 알아보는 MBTI 테스트입니다." />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="DinoCopers - 공룡테스트MBTI">
+        <meta property="og:description" content="귀여운 공룡으로 알아보는 MBTI 테스트입니다.">
+        <meta property="og:url" content="https://dinocopers.github.io/">
+        <meta name="author" content="" />
+        <meta name="naver-site-verification" content="59d6bfab7e7e5122033aaf04da0869d01ca31f43" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.jpg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">
+                    <img class="logo" src="assets/img/logo.png" alt="logo">DinoCopers</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#dinotest">공룡 테스트</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#projects">화석 발굴중..</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">아직 탐사중..</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">내가 만약<br>공룡이었다면?</h1><br>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">공룡 MBTI 테스트로<br>알아보자 !!</h2><br>
+                        <a class="btn btn-primary" href="#dinotest">테스트 시작</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 좌측 광고 배너-->
+        <!-- <div style="position: fixed; left: 20x; bottom:20px;">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-9YhFZbpGR4Ld606c" data-ad-width="160"
+                data-ad-height="600"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div> -->
+        <!-- 우측 광고 배너-->
+        <!-- <div style="position: fixed; right: 20px; bottom:20px;">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-sYjvhG9nU7xUMF1r" data-ad-width="160"
+                data-ad-height="600"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div> -->
+        <!-- dinotest-->
+        <section class="dinotest-section text-center" id="dinotest">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <article class="start">
+                            <!-- 중간 광고 배너-->
+                            <div class="kakao_ad mt-5">
+                                <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-ORXdwTfFXsanG0bS" data-ad-width="320"
+                                    data-ad-height="50"></ins>
+                                <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                            </div>
+                            <!-- 중간 광고 배너-->
+                            <br><br>
+                            <h1 class="text-white mb-4">내가 만약 공룡이었다면?</h1>
+                            <button type="button" class="btn btn-primary mt-5" onclick='start();'>테스트 시작하기</button>
+                        </article>
+
+                        <article class="question">
+                            <div class="progress mt-5">
+                                <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+                            </div>
+                            <br>
+                            <h2 id="title" class="text-center mt-5">문제</h2>
+                            <input id="type" type="hidden" value="EI">
+                            <br>
+                            <div class="rectangle mt-5"></div>
+                            <button id="A" type="button" class="btn-answer btn btn-primary pt-5 pb-5">대답A</button>
+                            <div class="mid-rectangle"></div>
+                            <button id="B" type="button" class="btn-answer btn btn-primary pt-5 pb-5">대답B</button>
+                            <div class="rectangle"></div>
+                        </article>
+
+                        <article class="result">
+                            <img class="updown-slash mt-3" stlye="margin: 0 auto;" src="assets/img/dino-slash.png" alt="dino-slash">
+                            <span class="result-message mt-4 mb-4">나는 이 공룡이었을 것이다!</span>
+                            <img id="img" class="result-dinoimg" src="img/dino.png" alt="dino">
+                            <h2 id="dino" class="result-dino text-center mt-4 mb-4">공룡이름</h2>
+                            <img class="updown-slash" style="margin: 0 auto; width: 250px; height: 35px;" src="assets/img/down-slash.png"
+                                alt="down-slash"><br>
+                            <h3 id="explain" class="result-explain text-center mt-4">설명</h3>
+                            <div class="rectangle mt-4 mb-4"></div><br><br>
+                            <button type="button" class="btn-outline-reset" onClick="window.location.reload()">다시하기</button>
+                            <br><br>
+                            <div class="rectangle mt-4 mb-4"></div>
+                            <br>
+                            <span class="share-message mb-4">공룡 테스트<strong>친구에게 공유하기</strong></span>
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div class="share addthis_inline_share_toolbox"></div>
+                        </article>
+
+                        <br><br>
+                        <!-- 하단 광고 배너 1-->
+                        <article class="kakao_ad mt-5">
+                            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-KQunwI6XJXJhjmSt" data-ad-width="320"
+                                data-ad-height="100"></ins>
+                            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                        <!-- 하단 광고 배너 1-->
+                        <!-- 하단 광고 배너 3-->
+                            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-MeQmdQtslX1F1Rc5" data-ad-width="320"
+                                data-ad-height="50"></ins>
+                            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                        </article>
+                        <!-- 하단 광고 배너 3-->
+                        
+                        <input type="hidden" id="EI" value="0">
+                        <input type="hidden" id="SN" value="0">
+                        <input type="hidden" id="TF" value="0">
+                        <input type="hidden" id="JP" value="0">
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+                        <script>
+                            var num = 1;
+                            var q = {
+                                1: {"title": "친구들이 새로 찾은 숲에 가서 함께 풀을 먹자고 한다. 두렵지만 가볼까?", "type": "EI", "A": "무엇이 있을까? 당장 가자!!", "B": "아니야.. 혼자 조용히 아껴둔 열매를 먹을 거야."},
+                                2: {"title": "이곳은 무시무시한 육식 공룡의 영역이다! 가족들에게 어떻게 돌아가야 할까?", "type": "SN", "A": "오는 길에 흔적을 남겼으니 흔적들을 찾아 돌아가자!", "B": " 이곳은 위험해..! 일단 이곳을 벗어나면서 주위를 둘러보자."},
+                                3: {"title": "\"그쪽으로 가지 말자 했잖아!\" 친구를 화나게 해버렸다.. 어떻게 할까?", "type": "TF", "A": "미안해.. 하지만 그 열매 정말 맛있었잖아..? 친구를 설득한다.", "B": "우리 일단 살았잖아!! 미안.. 화났어? 친구의 화를 풀어준다."},
+                                4: {"title": "우리 종일 풀 먹기 계획은 달성하기 힘들 것 같은데.?", "type": "JP", "A": "그럼 일단 뭐 하고 놀지 다 같이 의견을 내봐!", "B": "그럴 거 같더라. 우선 먹으면서 생각해보자."},
+                                5: {"title": "너는 앞으로 어떤 공룡이 될 거니?", "type": "EI", "A": "나는 무리를 이끌고 싶어!", "B": "나는 가족들과 오순도순 살고 싶어."},
+                                6: {"title": "다들 이틀이나 굶었다! 계획했던 사냥 오늘까지 해내야 하는데 할 수 있을까?", "type": "SN", "A": "하루 더 걸리더라도 큰 공룡을 정확하게 사냥한다.", "B": "배고파! 보이는 데로 사냥하자!"},
+                                7: {"title": "우리는 고향을 떠나 새로운 낙원에 정착할 거야, 어떡하지?", "type": "TF", "A": "다들 모여봐! 계획을 짜는 거야.", "B": "우선 당장 출발하는 거야!"},
+                                8: {"title": "결국 새로운 낙원을 찾지 못하고 다시 고향으로 돌아왔다. 친구가 다가온다. \"너 괜찮아?\"", "type": "JP", "A": "다들 정말 수고했지만, 겨울이 지나고 더 꼼꼼히 계획을 짜서 낙원을 꼭 찾아낼 거야!!", "B": "낙원을 찾지는 못했지만, 좋은 경험을 해서 좋았어.."},
+                                9: {"title": "몇 년 뒤.. 나는 무리의 리더가 되었다. 그동안 나를 도와주었던 친구들에게 어떻게 선물을 줄까?", "type": "EI", "A": "그동안 정말 고마웠어. 너희 모두에게 주는 선물이야!!", "B": "길동아 네가 없었다면 난 여기까지 오지 못했어. 정말 고마워. 너에게만 주는 선물이야!"},
+                                10: {"title": "나는 무리를 이끄는 것이 처음이다. 뭐부터 해야 하지?", "type": "SN", "A": "현실적으로 계획을 세워보자!", "B": "아니야, 계획은 크게 크게! 클수록 좋아."},
+                                11: {"title": "친구가 굶고 있다. 사냥 방법이 잘못되었나 고민하고 있다. 어떻게 할까?", "type": "TF", "A": "사냥 방법에 대한 다양한 의견을 주자!", "B": "많이 배고팠지..? 위로하며 공감해주자."},
+                                12: {"title": "무리를 지키려면 더 강해져야 해, 나는 어떻게 하면 강해질까?", "type": "JP", "A": "계획을 세워서 차근차근 단련하자!", "B": "아니야, 지금 당장 나의 수준을 확인해보는 거야."}
+                            }
+                            var result = {
+                                "ISTJ": {"dino": "플래너 스테고사우루스", "explain": "계획 세우기를 좋아하는 공룡이네요! 무언가를 할 때 먼저 나서서 계획을 세워요. 하지만 도전적인 거에는 서툴 수 있어요.<br><br>👍 잘 어울리는 공룡<br>✔ 자유로운 코엘로피시스<br>✔ 행동대장 스피노사우루스", "img": "assets/img/스테고.png"},
+                                "ISFJ": {"dino": "배려왕 딜로포사우루스", "explain": "상대방의 의견을 존중해주는 배려왕 공룡이네요! 좀 더 본인의 의견을 내세우면 좋을 것 같아요. 계획대로 잘 풀리지 않을 때 스트레스를 받는군요.<br><br>👍 잘 어울리는 공룡<br>✔ 행동대장 스피노사우루스<br>✔ 자유로운 코엘로피시스", "img": "assets/img/딜로포.png"},
+                                "INFJ": {"dino": "꼼꼼한 토로사우루스", "explain": "항상 계획적으로 생활하는 공룡이네요! 무엇을하던 의미가 커서 항상 꼼꼼하네요. 완벽함을 추구해서 믿음직하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 인기쟁이 티라노사우루스<br>✔ 탐험가 프테라노돈", "img": "assets/img/토로.png"},
+                                "INTJ": {"dino": "조언가 갈리미무스", "explain": "크게 보고 멀리 보는 조언가 공룡이네요! 멀리 보다 보니 목표치가 높네요. 시간은 투자한다 생각하여 좋은 해결책을 찾아내는군요.<br><br>👍 잘 어울리는 공룡<br>✔ 탐험가 프테라노돈<br>✔ 인기쟁이 티라노사우루스", "img": "assets/img/갈리.png"},
+                                "ISTP": {"dino": "계략가 파키케팔로사우루스", "explain": "목표가 확실한 공룡이네요! 목표를 달성하기 위해서라면 계획을 뒤집는 용기가 있네요. 좋아하는 것은 꼼꼼히 하지만 그렇지 않다면 쉽게 포기하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 리더 안킬로사우루스<br>✔ 나는야 브라키오사우루스", "img": "assets/img/파키케.png"},
+                                "ISFP": {"dino": "긍정왕 디플로도쿠스", "explain": "항상 긍정적인 긍정왕 공룡이네요! 이미 하나만 해결해도 큰일을 해냈다고 생각해요. 항상 여유롭고 즐길 줄 아는군요. 하지만 결정을 내리길 피하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 나는야 브라키오사우루스<br>✔ 리더 안킬로사우루스", "img": "assets/img/디플로.png"},
+                                "INFP": {"dino": "CEO 트리케라톱스", "explain": "자신을 사랑하는 자존감이 높은 공룡이네요! 본인이 세운 계획에 자신감이 넘치네요. 평소에 추진력이 강하지만 평가에는 객관적이고 냉철하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 평화의 파라사우룰로푸스<br>✔ 냉혈한 케라토사우루스", "img": "assets/img/트리케.png"},
+                                "INTP": {"dino": "전략가 벨로시랩터", "explain": "다양한 계획을 세우는 계획왕 공룡이네요! 무언가를 하는 것보다 계획을 세우는 거에 더 재미를 느끼네요. 호기심이 많고 반복되는 걸 좋아하지 않군요.<br><br>👍 잘 어울리는 공룡<br>✔ 냉혈한 케라토사우루스<br>✔ 평화의 파라사우룰로푸스", "img": "assets/img/벨로시.png"},
+                                "ESTP": {"dino": "행동대장 스피노사우루스", "explain": "행동대장 공룡이네요! 계획보다는 우선 행동으로 보여주네요. 할 일을 내일로 미루지만, 순발력이 좋고 긍정적이에요.<br><br>👍 잘 어울리는 공룡<br>✔ 배려왕 딜로포사우루스<br>✔ 플래너 스테고사우루스", "img": "assets/img/스피노.png"},
+                                "ESFP": {"dino": "자유로운 코엘로피시스", "explain": "자유로운 영혼의 공룡이네요! 계획을 세워 진행하는 것을 답답해해요. 틀에 갇힌 작업을 싫어해요. 밀려서 빠르게 일을 처리하는 편이네요.<br><br>👍 잘 어울리는 공룡<br>✔ 플래너 스테고사우루스<br>✔ 배려왕 딜로포사우루스", "img": "assets/img/콤프소.png"},
+                                "ENFP": {"dino": "인기쟁이 티라노사우루스", "explain": "도전정신과 아이디어가 넘치는 공룡이네요! 항상 아이디어가 반짝이고 새로운 시도를 좋아해요. 집단생활을 즐기고 친구들이 좋아해요. 가끔 기가 빨린다는 소리를 들어요.<br><br>👍 잘 어울리는 공룡<br>✔ 꼼꼼한 토로사우루스<br>✔ 조언가 갈리미무스", "img": "assets/img/티라노.png"},
+                                "ENTP": {"dino": "탐함가 프테라노돈", "explain": "새로운 도전이 짜릿한 공룡이네요! 반복적이고 계획대로 움직이는 일은 지루해요. 가끔 메모해두지만, 다시 열어보지 않아요!<br><br>👍 잘 어울리는 공룡<br>✔ 조언가 갈리미무스<br>✔ 꼼꼼한 토로사우루스", "img": "assets/img/프테라.png"},
+                                "ESTJ": {"dino": "나는야 브라키오사우루스", "explain": "계획적이며 현실적인 공룡이네요! 계획을 정하면 책임감이 강해 멋지게 목표를 향해 나아가네요. 휴식이 필요해 보여요.<br><br>👍 잘 어울리는 공룡<br>✔ 긍정왕 디플로도쿠스<br>✔ 계략가 파키케팔로사우루스", "img": "assets/img/브라키.png"},
+                                "ESFJ": {"dino": "리더 안킬로사우루스", "explain": "멋진 리더쉽의 공룡이네요! 계획을 철저하게 세우며 성공적으로 진행하려 해요. 리더쉽이 있고 여유로운 걸 불안해해요.<br><br>👍 잘 어울리는 공룡<br>✔ 계략가 파키케팔로사우루스<br>✔ 긍정왕 디플로도쿠스", "img": "assets/img/안킬로.png"},
+                                "ENFJ": {"dino": "평화의 파라사우룰로푸스", "explain": "평화주의자 공룡이네요! 속해있는 집단을 개인보다 우선으로 생각해요. 배려심이 깊지만 철저하고 현실적이에요.<br><br>👍 잘 어울리는 공룡<br>✔ CEO 트리케라톱스<br>✔ 전략가 벨로시랩터", "img": "assets/img/파라사.png"},
+                                "ENTJ": {"dino": "냉혈한 케라토사우루스", "explain": "강심장의 공룡이네요! 단호하고 빠르게 결정하네요. 항상 완벽함을 추구해요.<br><br>👍 잘 어울리는 공룡<br>✔ 전략가 벨로시랩터<br>✔ CEO 트리케라톱스", "img": "assets/img/케라토.png"}
+                            }
+                            function start() {
+                                $(".start").hide();
+                                $(".question").show();
+                                next();
+                            }
+                    
+                            $("#A").click(function(){
+                                var type = $("#type").val();
+                                var preValue = $("#"+type).val();
+                                $("#"+type).val(parseInt(preValue)+1);
+                                next();
+                            });
+                    
+                            $("#B").click(function(){
+                                next();
+                            });
+                    
+                            function next() {
+                                if(num==13){
+                                    $(".question").hide();
+                                    $(".result").show();
+                                    var mbti = "";
+                                    ($("#EI").val() <2) ?  mbti+="I" : mbti+="E";
+                                    ($("#SN").val() <2) ?  mbti+="N" : mbti+="S";
+                                    ($("#TF").val() <2) ?  mbti+="F" : mbti+="T";
+                                    ($("#JP").val() <2) ?  mbti+="P" : mbti+="J";
+                                    $("#img").attr("src",result[mbti]["img"]);
+                                    $("#dino").html(result[mbti]["dino"]);
+                                    $("#explain").html(result[mbti]["explain"]);
+                                }
+                                else{
+                                    $(".progress-bar").attr('style', 'width: calc(100/12*'+num+'%)');
+                                    $("#title").html(q[num]["title"]);
+                                    $("#type").val(q[num]["type"]);
+                                    $("#A").html(q[num]["A"]);
+                                    $("#B").html(q[num]["B"]);
+                                    num++;
+                                }
+                            }
+                        </script>
+                        <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6114f58735653c46"></script>
+                        
+                        <p class="text-white-50">
+                            
+                        </p>
+                    </div>
+                </div>
+                <!-- <img class="img-fluid" src="assets/img/dino01.jpg" alt="..." /> -->
+            </div>
+        </section>
+        <!-- Projects-->
+        <!-- <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5"> -->
+                <!-- Featured Project Row-->
+                <!-- <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/dino01.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Shoreline</h4>
+                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Project One Row-->
+                <!-- <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/dino01.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Misty</h4>
+                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Project Two Row-->
+                <!-- <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Mountains</h4>
+                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Signup-->
+        <!-- <section class="signup-section" id="signup">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2> -->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <!-- <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN"> -->
+                            <!-- Email address input-->
+                            <!-- <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                            </div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div> -->
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <!-- <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 mt-2 text-white">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div> -->
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <!-- <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Instagram</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="https://www.instagram.com/dinocopers">dinocopers</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">dinocopertm@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <!-- <i class="fas fa-mobile-alt text-primary mb-2"></i> -->
+                                <h4 class="text-uppercase m-0">후원/문의<br><br><br>donation/inquiry</h4>
+                                <!-- <hr class="my-4 mx-auto" /> -->
+                                <br>
+                                <div class="small text-black-50">DM or Email</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div> -->
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50">
+            <!-- 하단 광고 배너 2-->
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-AGg5A7FqpVAXnSm6" data-ad-width="320"
+                data-ad-height="50"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+            <!-- 하단 광고 배너 2-->
+            <Br>
+            <div class="container px-4 px-lg-5">&copy;2021. DinoCopers Co. all rights reserved.</div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
