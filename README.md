@@ -1,1 +1,2 @@
-공룡 테스트
+Dino Test - MBTI
+eng.ver
