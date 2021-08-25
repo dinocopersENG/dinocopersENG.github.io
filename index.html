@@ -45,7 +45,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">What if<br>I were a dino?</h1><br>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Let's test the<br>dino mbti!</h2><br>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Let's test the<br>dino MBTI !!</h2><br>
                         <a class="btn btn-primary" href="#dinotest">Start Test</a><br><br>
                         <!-- 상단 광고 배너-->
                         <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-fCzDl4CxwSXfsS9f" data-ad-width="320"
@@ -82,8 +82,8 @@
                             </div>
                             <!-- 중간 광고 배너-->
                             <br><br>
-                            <h1 class="text-white mb-4">내가 만약 공룡이었다면?</h1>
-                            <button type="button" class="btn btn-primary mt-5" onclick='start();'>테스트 시작하기</button>
+                            <h1 class="text-white mb-4">What if I were a dino?</h1>
+                            <button type="button" class="btn btn-primary mt-5" onclick='start();'>Start Test</button>
                         </article>
 
                         <article class="question">
@@ -103,18 +103,18 @@
 
                         <article class="result">
                             <img class="updown-slash mt-3" stlye="margin: 0 auto;" src="assets/img/dino-slash.png" alt="dino-slash">
-                            <span class="result-message mt-4 mb-4">나는 이 공룡이었을 것이다!</span>
+                            <span class="result-message mt-4 mb-4">I would have been this dinosaur!</span>
                             <img id="img" class="result-dinoimg" src="img/dino.png" alt="dino">
                             <h2 id="dino" class="result-dino text-center mt-4 mb-4">공룡이름</h2>
                             <img class="updown-slash" style="margin: 0 auto; width: 250px; height: 35px;" src="assets/img/down-slash.png"
                                 alt="down-slash"><br>
                             <h3 id="explain" class="result-explain text-center mt-4">설명</h3>
                             <div class="rectangle mt-4 mb-4"></div><br><br>
-                            <button type="button" class="btn-outline-reset" onClick="window.location.reload()">다시하기</button>
+                            <button type="button" class="btn-outline-reset" onClick="window.location.reload()">Try again!</button>
                             <br><br>
                             <div class="rectangle mt-4 mb-4"></div>
                             <br>
-                            <span class="share-message mb-4">공룡 테스트<strong>친구에게 공유하기</strong></span>
+                            <span class="share-message mb-4"><strong>Sharing Dinosaur Tests with Friends</strong></span>
                             <!-- Go to www.addthis.com/dashboard to customize your tools -->
                             <div class="share addthis_inline_share_toolbox"></div>
                         </article>
@@ -142,36 +142,36 @@
                         <script>
                             var num = 1;
                             var q = {
-                                1: {"title": "친구들이 새로 찾은 숲에 가서 함께 풀을 먹자고 한다. 두렵지만 가볼까?", "type": "EI", "A": "무엇이 있을까? 당장 가자!!", "B": "아니야.. 혼자 조용히 아껴둔 열매를 먹을 거야."},
-                                2: {"title": "이곳은 무시무시한 육식 공룡의 영역이다! 가족들에게 어떻게 돌아가야 할까?", "type": "SN", "A": "오는 길에 흔적을 남겼으니 흔적들을 찾아 돌아가자!", "B": " 이곳은 위험해..! 일단 이곳을 벗어나면서 주위를 둘러보자."},
-                                3: {"title": "\"그쪽으로 가지 말자 했잖아!\" 친구를 화나게 해버렸다.. 어떻게 할까?", "type": "TF", "A": "미안해.. 하지만 그 열매 정말 맛있었잖아..? 친구를 설득한다.", "B": "우리 일단 살았잖아!! 미안.. 화났어? 친구의 화를 풀어준다."},
-                                4: {"title": "우리 종일 풀 먹기 계획은 달성하기 힘들 것 같은데.?", "type": "JP", "A": "그럼 일단 뭐 하고 놀지 다 같이 의견을 내봐!", "B": "그럴 거 같더라. 우선 먹으면서 생각해보자."},
-                                5: {"title": "너는 앞으로 어떤 공룡이 될 거니?", "type": "EI", "A": "나는 무리를 이끌고 싶어!", "B": "나는 가족들과 오순도순 살고 싶어."},
-                                6: {"title": "다들 이틀이나 굶었다! 계획했던 사냥 오늘까지 해내야 하는데 할 수 있을까?", "type": "SN", "A": "하루 더 걸리더라도 큰 공룡을 정확하게 사냥한다.", "B": "배고파! 보이는 데로 사냥하자!"},
-                                7: {"title": "우리는 고향을 떠나 새로운 낙원에 정착할 거야, 어떡하지?", "type": "TF", "A": "다들 모여봐! 계획을 짜는 거야.", "B": "우선 당장 출발하는 거야!"},
-                                8: {"title": "결국 새로운 낙원을 찾지 못하고 다시 고향으로 돌아왔다. 친구가 다가온다. \"너 괜찮아?\"", "type": "JP", "A": "다들 정말 수고했지만, 겨울이 지나고 더 꼼꼼히 계획을 짜서 낙원을 꼭 찾아낼 거야!!", "B": "낙원을 찾지는 못했지만, 좋은 경험을 해서 좋았어.."},
-                                9: {"title": "몇 년 뒤.. 나는 무리의 리더가 되었다. 그동안 나를 도와주었던 친구들에게 어떻게 선물을 줄까?", "type": "EI", "A": "그동안 정말 고마웠어. 너희 모두에게 주는 선물이야!!", "B": "길동아 네가 없었다면 난 여기까지 오지 못했어. 정말 고마워. 너에게만 주는 선물이야!"},
-                                10: {"title": "나는 무리를 이끄는 것이 처음이다. 뭐부터 해야 하지?", "type": "SN", "A": "현실적으로 계획을 세워보자!", "B": "아니야, 계획은 크게 크게! 클수록 좋아."},
-                                11: {"title": "친구가 굶고 있다. 사냥 방법이 잘못되었나 고민하고 있다. 어떻게 할까?", "type": "TF", "A": "사냥 방법에 대한 다양한 의견을 주자!", "B": "많이 배고팠지..? 위로하며 공감해주자."},
-                                12: {"title": "무리를 지키려면 더 강해져야 해, 나는 어떻게 하면 강해질까?", "type": "JP", "A": "계획을 세워서 차근차근 단련하자!", "B": "아니야, 지금 당장 나의 수준을 확인해보는 거야."}
+                                1: {"title": "My friends ask me to go to the newly found forest and eat grass together. Are you afraid to go?", "type": "EI", "A": "What could there be? Let's go now!!", "B": "No... I'm gonna eat the fruit that I've been saving quietly by myself."},
+                                2: {"title": "This is the realm of the terrifying carnivorous dinosaurs! How do I get back to my family?", "type": "SN", "A": "I left a trail on the way here, so let's go back looking for traces!", "B": "This place is dangerous. Let's get out of here and look around."},
+                                3: {"title": "\"I told you not to go that way!\" I made my friend angry. What should I do?", "type": "TF", "A": "I'm sorry, but the fruit was really delicious, right? Persuade a friend.", "B": "We're alive for now! I'm sorry. Are you mad? Relieve your friend's anger."},
+                                4: {"title": "I don't think we can achieve our plan to eat grass all day long.", "type": "JP", "A": "Let's talk about what we're going to do first!", "B": "I thought so. Let's think about it while eating first."},
+                                5: {"title": "What kind of dinosaur are you going to be?", "type": "EI", "A": "I want to lead the pack!", "B": "I want to live with my family."},
+                                6: {"title": "They haven't eaten for two days! I have to do the hunt I planned by today, can I?", "type": "SN", "A": "Even if it takes another day, it hunts large dinosaurs accurately.", "B": "Hungry! Let's hunt where we can see it!"},
+                                7: {"title": "We're going to leave our hometown and settle in a new paradise, what should we do?", "type": "TF", "A": "Gather around! I'm making a plan.", "B": "Let's go right now!"},
+                                8: {"title": "Eventually, he returned to his hometown without finding a new paradise. A friend is approaching. \"Are you okay?\"", "type": "JP", "A": "Everyone did a great job, but after winter, I will plan more carefully and find paradise!!", "B": "I couldn't find paradise, but it was good to have a good experience.."},
+                                9: {"title": "A few years later, I became the leader of the pack. How can I give gifts to my friends who have helped me?", "type": "EI", "A": "Thank you so much for all this time. It's a gift for all of you!!", "B": "My friend, I wouldn't have come this far without you. Thank you so much. It's a gift only for you!"},
+                                10: {"title": "I'm the first to lead the pack. What should I do first?", "type": "SN", "A": "Let's plan realistically!", "B": "No, the plan is big! The bigger, the better."},
+                                11: {"title": "My friend is starving. I'm wondering if the hunting method is wrong. What should I do?", "type": "TF", "A": "Let's give them various ideas on how to hunt!", "B": "You were hungry, weren't you? Let's comfort each other and empathize."},
+                                12: {"title": "You have to be stronger to protect the herd, how can I be stronger?", "type": "JP", "A": "Let's make a plan and train ourselves step by step by step!", "B": "No, I'm checking my level right now."}
                             }
                             var result = {
-                                "ISTJ": {"dino": "플래너 스테고사우루스", "explain": "계획 세우기를 좋아하는 공룡이네요! 무언가를 할 때 먼저 나서서 계획을 세워요. 하지만 도전적인 거에는 서툴 수 있어요.<br><br>👍 잘 어울리는 공룡<br>✔ 자유로운 코엘로피시스<br>✔ 행동대장 스피노사우루스", "img": "assets/img/스테고.png"},
-                                "ISFJ": {"dino": "배려왕 딜로포사우루스", "explain": "상대방의 의견을 존중해주는 배려왕 공룡이네요! 좀 더 본인의 의견을 내세우면 좋을 것 같아요. 계획대로 잘 풀리지 않을 때 스트레스를 받는군요.<br><br>👍 잘 어울리는 공룡<br>✔ 행동대장 스피노사우루스<br>✔ 자유로운 코엘로피시스", "img": "assets/img/딜로포.png"},
-                                "INFJ": {"dino": "꼼꼼한 토로사우루스", "explain": "항상 계획적으로 생활하는 공룡이네요! 무엇을하던 의미가 커서 항상 꼼꼼하네요. 완벽함을 추구해서 믿음직하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 인기쟁이 티라노사우루스<br>✔ 탐험가 프테라노돈", "img": "assets/img/토로.png"},
-                                "INTJ": {"dino": "조언가 갈리미무스", "explain": "크게 보고 멀리 보는 조언가 공룡이네요! 멀리 보다 보니 목표치가 높네요. 시간은 투자한다 생각하여 좋은 해결책을 찾아내는군요.<br><br>👍 잘 어울리는 공룡<br>✔ 탐험가 프테라노돈<br>✔ 인기쟁이 티라노사우루스", "img": "assets/img/갈리.png"},
-                                "ISTP": {"dino": "계략가 파키케팔로사우루스", "explain": "목표가 확실한 공룡이네요! 목표를 달성하기 위해서라면 계획을 뒤집는 용기가 있네요. 좋아하는 것은 꼼꼼히 하지만 그렇지 않다면 쉽게 포기하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 리더 안킬로사우루스<br>✔ 나는야 브라키오사우루스", "img": "assets/img/파키케.png"},
-                                "ISFP": {"dino": "긍정왕 디플로도쿠스", "explain": "항상 긍정적인 긍정왕 공룡이네요! 이미 하나만 해결해도 큰일을 해냈다고 생각해요. 항상 여유롭고 즐길 줄 아는군요. 하지만 결정을 내리길 피하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 나는야 브라키오사우루스<br>✔ 리더 안킬로사우루스", "img": "assets/img/디플로.png"},
-                                "INFP": {"dino": "CEO 트리케라톱스", "explain": "자신을 사랑하는 자존감이 높은 공룡이네요! 본인이 세운 계획에 자신감이 넘치네요. 평소에 추진력이 강하지만 평가에는 객관적이고 냉철하네요.<br><br>👍 잘 어울리는 공룡<br>✔ 평화의 파라사우룰로푸스<br>✔ 냉혈한 케라토사우루스", "img": "assets/img/트리케.png"},
-                                "INTP": {"dino": "전략가 벨로시랩터", "explain": "다양한 계획을 세우는 계획왕 공룡이네요! 무언가를 하는 것보다 계획을 세우는 거에 더 재미를 느끼네요. 호기심이 많고 반복되는 걸 좋아하지 않군요.<br><br>👍 잘 어울리는 공룡<br>✔ 냉혈한 케라토사우루스<br>✔ 평화의 파라사우룰로푸스", "img": "assets/img/벨로시.png"},
-                                "ESTP": {"dino": "행동대장 스피노사우루스", "explain": "행동대장 공룡이네요! 계획보다는 우선 행동으로 보여주네요. 할 일을 내일로 미루지만, 순발력이 좋고 긍정적이에요.<br><br>👍 잘 어울리는 공룡<br>✔ 배려왕 딜로포사우루스<br>✔ 플래너 스테고사우루스", "img": "assets/img/스피노.png"},
-                                "ESFP": {"dino": "자유로운 코엘로피시스", "explain": "자유로운 영혼의 공룡이네요! 계획을 세워 진행하는 것을 답답해해요. 틀에 갇힌 작업을 싫어해요. 밀려서 빠르게 일을 처리하는 편이네요.<br><br>👍 잘 어울리는 공룡<br>✔ 플래너 스테고사우루스<br>✔ 배려왕 딜로포사우루스", "img": "assets/img/콤프소.png"},
-                                "ENFP": {"dino": "인기쟁이 티라노사우루스", "explain": "도전정신과 아이디어가 넘치는 공룡이네요! 항상 아이디어가 반짝이고 새로운 시도를 좋아해요. 집단생활을 즐기고 친구들이 좋아해요. 가끔 기가 빨린다는 소리를 들어요.<br><br>👍 잘 어울리는 공룡<br>✔ 꼼꼼한 토로사우루스<br>✔ 조언가 갈리미무스", "img": "assets/img/티라노.png"},
-                                "ENTP": {"dino": "탐함가 프테라노돈", "explain": "새로운 도전이 짜릿한 공룡이네요! 반복적이고 계획대로 움직이는 일은 지루해요. 가끔 메모해두지만, 다시 열어보지 않아요!<br><br>👍 잘 어울리는 공룡<br>✔ 조언가 갈리미무스<br>✔ 꼼꼼한 토로사우루스", "img": "assets/img/프테라.png"},
-                                "ESTJ": {"dino": "나는야 브라키오사우루스", "explain": "계획적이며 현실적인 공룡이네요! 계획을 정하면 책임감이 강해 멋지게 목표를 향해 나아가네요. 휴식이 필요해 보여요.<br><br>👍 잘 어울리는 공룡<br>✔ 긍정왕 디플로도쿠스<br>✔ 계략가 파키케팔로사우루스", "img": "assets/img/브라키.png"},
-                                "ESFJ": {"dino": "리더 안킬로사우루스", "explain": "멋진 리더쉽의 공룡이네요! 계획을 철저하게 세우며 성공적으로 진행하려 해요. 리더쉽이 있고 여유로운 걸 불안해해요.<br><br>👍 잘 어울리는 공룡<br>✔ 계략가 파키케팔로사우루스<br>✔ 긍정왕 디플로도쿠스", "img": "assets/img/안킬로.png"},
-                                "ENFJ": {"dino": "평화의 파라사우룰로푸스", "explain": "평화주의자 공룡이네요! 속해있는 집단을 개인보다 우선으로 생각해요. 배려심이 깊지만 철저하고 현실적이에요.<br><br>👍 잘 어울리는 공룡<br>✔ CEO 트리케라톱스<br>✔ 전략가 벨로시랩터", "img": "assets/img/파라사.png"},
-                                "ENTJ": {"dino": "냉혈한 케라토사우루스", "explain": "강심장의 공룡이네요! 단호하고 빠르게 결정하네요. 항상 완벽함을 추구해요.<br><br>👍 잘 어울리는 공룡<br>✔ 전략가 벨로시랩터<br>✔ CEO 트리케라톱스", "img": "assets/img/케라토.png"}
+                                "ISTJ": {"dino": "Planner Stegosaurus", "explain": "A dinosaur who likes to make plans! When you do something, come up with a plan first. But I'm not good at challenging things.<br><br>👍 Well-Match Dino<br>✔ Free Coelophysis<br>✔ General Spinosaurus", "img": "assets/img/스테고.png"},
+                                "ISFJ": {"dino": "Considerate Dilophosaurus", "explain": "A considerate dinosaur who respects the other person's opinion! I think it'd be better if you put your opinion. You get stressed when things don't go as planned.<br><br>👍 Well-Match Dino<br>✔ General Spinosaurus<br>✔ Free Coelophysis", "img": "assets/img/딜로포.png"},
+                                "INFJ": {"dino": "Meticulous Torosaurus", "explain": "What a planned dinosaur! Whatever you do, you're always meticulous. It's trustworthy to pursue perfection.<br><br>👍 Well-Match Dino<br>✔ Popular Tyrannosaurus<br>✔ Adventurer Pteranodon", "img": "assets/img/토로.png"},
+                                "INTJ": {"dino": "Adviser Gallimimus", "explain": "What a big, far-sighted adviser dinosaur! Looking far away, the target is high. You think time is an investment and find a good solution.<br><br>👍 Well-Match Dino<br>✔ Adventurer Pteranodon<br>✔ Popular Tyrannosaurus", "img": "assets/img/갈리.png"},
+                                "ISTP": {"dino": "Ruse Pachycephalosaurus", "explain": "A dinosaur with a clear goal! You have the courage to reverse your plan to achieve your goal. I do what I like carefully, but if I don't, I give up easily.<br><br>👍 Well-Match Dino<br>✔ Leader Ankylosaurus<br>✔ I'm Brachiosaurus", "img": "assets/img/파키케.png"},
+                                "ISFP": {"dino": "Positive Diplodocus", "explain": "You are always a positive king of positivity! I think I've already done a big job if I solve just one. You're always relaxed and know how to enjoy yourself. But you're avoiding making a decision.<br><br>👍 Well-Match Dino<br>✔ I'm Brachiosaurus<br>✔ Leader Ankylosaurus", "img": "assets/img/디플로.png"},
+                                "INFP": {"dino": "CEO Triceratops", "explain": "A self-esteem dinosaur who loves himself! You're confident about your plan. He's usually driven, but he's objective and cool-headed when it comes to evaluation.<br><br>👍 Well-Match Dino<br>✔ Peaceful Parasaurolophus<br>✔ Cold-blooded Ceratosaurus", "img": "assets/img/트리케.png"},
+                                "INTP": {"dino": "Strategist Velociraptor", "explain": "You're the planning king dinosaur with variously planned dinosaur! I find it more fun to plan than to do something. You're curious and don't like repetition.<br><br>👍 Well-Match Dino<br>✔ Cold-blooded Ceratosaurus<br>✔ Peaceful Parasaurolophus", "img": "assets/img/벨로시.png"},
+                                "ESTP": {"dino": "General Spinosaurus", "explain": "General Dinosaur! You show it through action rather than planning. I put off what I have to do until tomorrow, but I'm quick and positive.<br><br>👍 Well-Match Dino<br>✔ Considerate Dilophosaurus<br>✔ Planner Stegosaurus", "img": "assets/img/스피노.png"},
+                                "ESFP": {"dino": "Free Coelophysis", "explain": "What a free spirit dinosaur! I'm frustrated with planning and proceeding. I don't like to be stuck in a rut. You tend to get things done quickly because you're behind.<br><br>👍 Well-Match Dino<br>✔ Planner Stegosaurus<br>✔ Considerate Dilophosaurus", "img": "assets/img/콤프소.png"},
+                                "ENFP": {"dino": "Popular Tyrannosaurus", "explain": "A dinosaur full of challenging spirit and ideas! I always have brilliant ideas and like to try new things. I enjoy group life and my friends like it. Sometimes I hear that my energy is fast.<br><br>👍 Well-Match Dino<br>✔ Meticulous Torosaurus<br>✔ Adviser Gallimimus", "img": "assets/img/티라노.png"},
+                                "ENTP": {"dino": "Adventurer Pteranodon", "explain": "A new challenge is a thrilling dinosaur! It's boring to be repetitive and move according to plan. I take notes sometimes, but I don't open it again!<br><br>👍 Well-Match Dino<br>✔ Adviser Gallimimus<br>✔ Meticulous Torosaurus", "img": "assets/img/프테라.png"},
+                                "ESTJ": {"dino": "I'm Brachiosaurus", "explain": "What a planned and realistic dinosaur! When you make a plan, you have a strong sense of responsibility, so you move forward with your goal. It looks like you need a break.<br><br>👍 Well-Match Dino<br>✔ Positive Diplodocus<br>✔ Ruse Pachycephalosaurus", "img": "assets/img/브라키.png"},
+                                "ESFJ": {"dino": "Leader Ankylosaurus", "explain": "What a great leadership dinosaur! I'm going to plan thoroughly and proceed successfully. He has leadership and is anxious about being relaxed.<br><br>👍 Well-Match Dino<br>✔ Ruse Pachycephalosaurus<br>✔ Positive Diplodocus", "img": "assets/img/안킬로.png"},
+                                "ENFJ": {"dino": "Peaceful Parasaurolophus", "explain": "What a pacifist dinosaur! I consider the group that I belong to before the individual. He is considerate but thorough and realistic.<br><br>👍 Well-Match Dino<br>✔ CEO Triceratops<br>✔ Strategist Velociraptor", "img": "assets/img/파라사.png"},
+                                "ENTJ": {"dino": "Cold-blooded Ceratosaurus", "explain": "A dinosaur with a strong heart! You're determined and quick to decide. I always pursue perfection.<br><br>👍 Well-Match Dino<br>✔ Strategist Velociraptor<br>✔ CEO Triceratops", "img": "assets/img/케라토.png"}
                             }
                             function start() {
                                 $(".start").hide();
@@ -340,7 +340,7 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <!-- <i class="fas fa-mobile-alt text-primary mb-2"></i> -->
-                                <h4 class="text-uppercase m-0">후원/문의<br><br><br>donation/inquiry</h4>
+                                <h4 class="text-uppercase m-0">Donation/Inquiry<br><br><br>후원/문의</h4>
                                 <!-- <hr class="my-4 mx-auto" /> -->
                                 <br>
                                 <div class="small text-black-50">DM or Email</div>
